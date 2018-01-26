@@ -1,0 +1,103 @@
+#art-container {
+  background-color: transparent;
+  width: 540px;
+  height: 580px;
+  transform: scale(0.25);
+  -ms-transform: scale(0.25, 0.25);
+  /* IE 9 */
+  -webkit-transform: scale(0.25, 0.25);
+  /* Safari */
+  transform: scale(0.25, 0.25); }
+
+#art-container div {
+  position: absolute; }
+
+#flower {
+  width: 540px;
+  height: 170px;
+  background-color: transparent;
+  /* src: url("./resources/flower.svg"); */
+  background-size: 540px 170px;
+  background-image: url("../assets/flowers.svg"); }
+
+#tiles-container {
+  width: 480px;
+  height: 480px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -240px;
+  margin-top: -190px; }
+
+#tile-plate {
+  width: 450px;
+  height: 420px;
+  background-color: #666666;
+  box-shadow: 0 0 7px #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -225px;
+  margin-top: -200px; }
+
+.tile {
+  background-color: #dbf9f9;
+  border-radius: 10px;
+  /* Temp */
+  color: transparent;
+  text-align: center;
+  line-height: 150px;
+  font-size: 72pt;
+  width: 200px;
+  height: 150px; }
+
+.left-tile {
+  background: -webkit-linear-gradient(left, #ebfafa, #dbf9f9);
+  background: -o-linear-gradient(right, #ebfafa, #dbf9f9);
+  background: -moz-linear-gradient(right, #ebfafa, #dbf9f9);
+  background: linear-gradient(to right, #ebfafa, #dbf9f9); }
+
+.right-tile {
+  background: #dbf9f9;
+  background: -webkit-linear-gradient(right, #ebfafa, #dbf9f9);
+  background: -o-linear-gradient(left, #ebfafa, #dbf9f9);
+  background: -moz-linear-gradient(left, #ebfafa, #dbf9f9);
+  background: linear-gradient(to left, #ebfafa, #dbf9f9); }
+
+#tile-zero {
+  width: 303px;
+  height: 175px; }
+
+#tile-one {
+  width: 175px;
+  height: 175px;
+  right: 0; }
+
+#tile-two {
+  width: 341px;
+  height: 175px;
+  top: 178px; }
+
+#tile-three {
+  width: 137px;
+  height: 137px;
+  top: 178px;
+  right: 0; }
+
+#tile-four {
+  width: 213px;
+  height: 125px;
+  bottom: 0; }
+
+#tile-five {
+  width: 126px;
+  height: 125px;
+  bottom: 0;
+  left: 215px; }
+
+#tile-six {
+  width: 137px;
+  height: 163px;
+  right: 0;
+  bottom: 0; }

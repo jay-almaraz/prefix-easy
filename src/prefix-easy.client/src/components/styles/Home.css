@@ -3,11 +3,42 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: nowrap; }
 
 .home-content {
-  background: lightcyan;
   text-align: center;
-  padding: 15%;
   color: #282828;
-  width: 100%; }
+  display: flex;
+  flex-grow: 0;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.row-one {
+  margin-bottom: -0.25em; }
+
+.row-two {
+  margin-top: -0.25em; }
+
+.two-line-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 50px; }
+
+.left-cell {
+  justify-self: end; }
+
+.right-cell {
+  justify-self: start; }
+
+.title-block {
+  font-size: 4.25em;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+  text-align: center; }
+
+.title-block:hover {
+  cursor: default; }
