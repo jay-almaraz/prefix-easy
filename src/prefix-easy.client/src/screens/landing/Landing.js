@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './landing.css';
+import './landing.scss';
 
 export class Landing extends React.Component {
     render() {
@@ -8,10 +8,10 @@ export class Landing extends React.Component {
                 <div class="home-content">
 
                     <div class="title-block two-line-grid">
-                    <div class="left-cell row-one">PREFIX</div>
-                    <div class="right-cell row-one">EASY</div>
-                    <div class="left-cell row-two">prefiX</div>
-                    <div class="right-cell row-two">easy</div>
+                        <div class="left-cell row-one">PREFIX</div>
+                        <div class="right-cell row-one">EASY</div>
+                        <div class="left-cell row-two">prefiX</div>
+                        <div class="right-cell row-two">easy</div>
                     </div>
 
                 </div>
