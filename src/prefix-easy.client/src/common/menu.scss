@@ -1,0 +1,28 @@
+.menu-container {
+    width: 100%;
+    position: fixed;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu-item {
+    // background: blue;
+    font-weight: 300;
+    vertical-align: middle;
+    text-align: center;
+    padding: 22px 24px;
+    margin: 0 0;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    color: lightcoral;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
