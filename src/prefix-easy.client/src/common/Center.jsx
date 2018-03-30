@@ -10,7 +10,8 @@ export class Center extends React.Component {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    alignContent: "center"
+                    alignContent: "center",
+                    backgroundImage: this.props.backgroundImage
                 }}
             >
                 <div
@@ -34,7 +35,11 @@ export class CenterSection extends React.Component {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    alignContent: "center"
+                    alignContent: "center",
+                    backgroundImage: "url(" + this.props.backgroundImage + ")",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"
                 }}
             >
                 <div

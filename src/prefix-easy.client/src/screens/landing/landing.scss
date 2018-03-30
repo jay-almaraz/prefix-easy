@@ -22,13 +22,25 @@
   cursor: default;
 }
 
-$row-offset: -0.23em;
+$row-offset: -0.25em;
+
 .row-one {
   margin-bottom: $row-offset;
+  background-color: white;
+  // z-index: 2;
 }
 
 .row-two {
+  z-index: 1;
   margin-top: $row-offset;
+  // -moz-transform: scaleY(-1);    /* Gecko */
+  // -o-transform: scaleY(-1);      /* Opera */
+  // -webkit-transform: scaleY(-1); /* Webkit */
+  // transform: scaleY(-1);         /* Standard */
+  // filter: FlipV;
+  opacity: 0.75;
+  filter: alpha(opacity=25);
+  background-color: white;
 }
 
 .two-line-grid {
@@ -47,10 +59,11 @@ $row-offset: -0.23em;
 }
 
 %large-text {
-  font-size: 4.25em;
+  font-size: 3.75em;
   font-weight: lighter;
   letter-spacing: 0.25em;
   text-align: center;
+  // background-color: white;
 }
 
 .title-block {
@@ -58,13 +71,39 @@ $row-offset: -0.23em;
 }
  
 .title-badge {
+  display: flex;
   width: 100%;
-  text-align: left;
+}
+
+.title-badge-text {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  padding-left: 0.5em;
-  font-size: 1.4em;
+  margin-left: 0.5em;
+  font-size: 1em;
   margin-bottom: -0.5em;
-  // background-color: red;
+  color: white;
+  background-color: black;
+  padding-left: 12px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  z-index: 3;
+}
+
+// Tape oversizing
+.left-cell.row-one {
+  padding-left: 48px;
+}
+
+.right-cell.row-one {
+  padding-right: 32px;
+}
+
+.left-cell.row-two {
+  padding-left: 16px;
+}
+
+.right-cell.row-two {
+  padding-right: 16px;
 }
