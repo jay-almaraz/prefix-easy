@@ -11,8 +11,9 @@ export class Center extends React.Component {
                     justifyContent: "center",
                     alignItems: "center",
                     alignContent: "center",
-                    backgroundImage: this.props.backgroundImage
+                    backgroundImage: this.props.backgroundimage
                 }}
+                {...this.props}
             >
                 <div
                     style={{
@@ -29,6 +30,7 @@ export class CenterSection extends React.Component {
     render() {
         return (
             <section
+                {...this.props}
                 style={{
                     width: "100%",
                     minHeight: "100vh",
@@ -36,10 +38,11 @@ export class CenterSection extends React.Component {
                     justifyContent: "center",
                     alignItems: "center",
                     alignContent: "center",
-                    backgroundImage: "url(" + this.props.backgroundImage + ")",
+                    backgroundImage: "url(" + this.props.backgroundimage + ")",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
+                    backgroundPosition: "center",
+                    backgroundAttachment: "fixed"
                 }}
             >
                 <div

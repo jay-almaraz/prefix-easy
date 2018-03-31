@@ -7,10 +7,10 @@ export class Menu extends React.Component {
         return (
             <div className="menu-bar">
                 <div className="menu-container">
-                    <Link href="/" className="menu-item">Home</Link>
+                    <a href="/#home" className="menu-item">Home</a>
                     <Link href="/photography" className="menu-item">Photography</Link>
                     <Link href="/software" className="menu-item">Software</Link>
-                    <Link href="/about" className="menu-item">About</Link>
+                    <a href="/#about" className="menu-item">About</a>
                 </div>
             </div>
         );

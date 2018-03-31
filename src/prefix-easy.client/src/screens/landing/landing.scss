@@ -22,12 +22,13 @@
   cursor: default;
 }
 
-$row-offset: -0.25em;
+$row-offset: -0.35em;
+$row-background-color: white;
 
 .row-one {
   margin-bottom: $row-offset;
-  background-color: white;
-  // z-index: 2;
+  background-color: $row-background-color;
+  z-index: 2;
 }
 
 .row-two {
@@ -38,9 +39,9 @@ $row-offset: -0.25em;
   // -webkit-transform: scaleY(-1); /* Webkit */
   // transform: scaleY(-1);         /* Standard */
   // filter: FlipV;
-  opacity: 0.75;
+  opacity: 0.2;
   filter: alpha(opacity=25);
-  background-color: white;
+  background-color: $row-background-color;
 }
 
 .two-line-grid {
@@ -98,12 +99,16 @@ $row-offset: -0.25em;
 
 .right-cell.row-one {
   padding-right: 32px;
+  padding-left: 16px;
+  margin-left: -32px;
 }
 
 .left-cell.row-two {
   padding-left: 16px;
+  margin-right: 16px;
 }
 
 .right-cell.row-two {
   padding-right: 16px;
+  margin-left: 16px;
 }
