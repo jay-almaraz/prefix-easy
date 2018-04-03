@@ -26,10 +26,6 @@ class App extends React.Component {
                         path="/software"
                         handler={SoftwareScreen}
                     />
-                    <Location
-                        path="/#about"
-                        handler={Container}
-                    />
                     <NotFound handler={FourOhFour} />
                 </Locations>
             </div>

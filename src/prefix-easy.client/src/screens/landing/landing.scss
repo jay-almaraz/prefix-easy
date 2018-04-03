@@ -29,6 +29,8 @@ $row-background-color: white;
   margin-bottom: $row-offset;
   background-color: $row-background-color;
   z-index: 2;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
 }
 
 .row-two {
