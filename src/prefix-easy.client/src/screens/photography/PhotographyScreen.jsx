@@ -7,7 +7,9 @@ export class PhotographyScreen extends React.Component {
             <CenterSection
                 {...this.props}
             >
-                <h1>PhotographyScreen</h1>
+                <div className="photo-screen-container">
+                    <h1>PhotographyScreen</h1>
+                </div>
             </CenterSection>
         );
     }
