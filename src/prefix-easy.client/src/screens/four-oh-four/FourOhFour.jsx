@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CenterSection } from '../../common/Center';
+import { CenterSection } from '../../common';
 import './four-oh-four.scss';
 
 export class FourOhFour extends React.Component {

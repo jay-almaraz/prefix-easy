@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CenterSection } from '../../common/Center';
+import { CenterSection } from '../../common';
 
 export class PhotographyScreen extends React.Component {
     render() {

@@ -10,7 +10,7 @@ export class Center extends React.Component {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    alignContent: "center",
+                    // alignContent: "center",
                     backgroundImage: this.props.backgroundimage
                 }}
                 {...this.props}
@@ -37,20 +37,21 @@ export class CenterSection extends React.Component {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    alignContent: "center",
+                    // alignContent: "center",
                     backgroundImage: "url(" + this.props.backgroundimage + ")",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
-                    backgroundAttachment: "fixed"
+                    backgroundAttachment: "fixed",
+                    ...this.props.style
                 }}
             >
-                <div
+                {/* <div
                     style={{
                     }}
-                >
+                > */}
                     {this.props.children}
-                </div>
+                {/* </div> */}
             </section>
         );
     }

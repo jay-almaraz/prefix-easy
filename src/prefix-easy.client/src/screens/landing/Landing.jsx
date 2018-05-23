@@ -1,7 +1,8 @@
 import * as React from 'react';
 import './landing.scss';
 import backgroundImage from './IMG_2949.JPG';
-import { CenterSection } from '../../common/Center';
+import { CenterSection } from '../../common';
+import { WelcomeScreen } from '../';
 
 export class Landing extends React.Component {
     render() {
@@ -28,11 +29,7 @@ export class Landing extends React.Component {
                     </div>
                 </CenterSection>
 
-                <CenterSection
-                    {...this.props}
-                >
-                    <h1>InfoScreen</h1>
-                </CenterSection>
+                <WelcomeScreen/>
             </div>
         );
     }
