@@ -18,8 +18,9 @@ export class WelcomeScreen extends React.Component {
                     }}
                 >
                     <div class="content">
-                        <div class="avatar-wrap">
+                        <div class="avatar-wrap bounce">
                             <div class="avatar-border">
+                                <div class="avatar phase"/>
                                 <img class="avatar" src={avatar}/>
                             </div>
                         </div> 

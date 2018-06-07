@@ -32,6 +32,7 @@
     // background: linear-gradient(141deg, #ffffff 0%, #ffffd6 51%, #ffe2d6 75%);
     background-color: white;
     border-radius: 196px;
+    opacity: 1;
 }
 
 .text-wrap {
@@ -80,4 +81,75 @@ p {
     // border-left: 100vw solid transparent;
     border-left: calc(100vw - 15px) solid transparent;
     margin-top: -100px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-1px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+$phase-time: 5s;
+$phase-animate: ease;
+.phase {
+    position: absolute;
+    opacity: 0.5;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffe5+48,fff7e5+52,ffffff+100&0.15+20,0.99+51,0.15+84 */
+    background: -moz-linear-gradient(70deg, rgba(255,255,255,0.15) 0%, rgba(255,255,244,0.15) 20%, rgba(255,255,229,0.91) 48%, rgba(255,249,229,0.99) 51%, rgba(255,247,229,0.96) 52%, rgba(255,252,246,0.15) 84%, rgba(255,255,255,0.15) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(70deg, rgba(255,255,255,0.15) 0%,rgba(255,255,244,0.15) 20%,rgba(255,255,229,0.91) 48%,rgba(255,249,229,0.99) 51%,rgba(255,247,229,0.96) 52%,rgba(255,252,246,0.15) 84%,rgba(255,255,255,0.15) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(70deg, rgba(255,255,255,0.15) 0%,rgba(255,255,244,0.15) 20%,rgba(255,255,229,0.91) 48%,rgba(255,249,229,0.99) 51%,rgba(255,247,229,0.96) 52%,rgba(255,252,246,0.15) 84%,rgba(255,255,255,0.15) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#26ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-size: 400% 400%;
+	-webkit-animation: phase-gradient $phase-time $phase-animate infinite;
+	-moz-animation: phase-gradient $phase-time $phase-animate infinite;
+	animation: phase-gradient $phase-time $phase-animate infinite;
+}
+
+@keyframes phase-gradient {
+	0% {
+		background-position: 0% 40%
+	}
+	40% {
+		background-position: 150% 50%
+	}
+	80% {
+		background-position: 90% 100%
+    }
+    100% {
+		background-position: 0% 40%
+	}
+}
+
+@-webkit-keyframes phase-gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	30% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes phase-gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	30% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
