@@ -21,7 +21,7 @@ export class WelcomeScreen extends React.Component {
                         <div class="avatar-wrap bounce">
                             <div class="avatar-border">
                                 <div class="avatar phase"/>
-                                <img class="avatar" src={avatar}/>
+                                <img alt="Hello, I'm Jay; Profile-pic for short self description" class="avatar" src={avatar}/>
                             </div>
                         </div> 
                         <div class="text-wrap">

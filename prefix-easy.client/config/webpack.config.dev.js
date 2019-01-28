@@ -151,6 +151,21 @@ module.exports = {
               cacheDirectory: true,
             },
           },
+          // Here we punch our modules with a standard css-loader.
+          // This enables the Materialize-css module
+          {
+            test: /\.css$/,
+            exclude: [/src/],
+            use: [
+              require.resolve('style-loader'),
+              {
+                loader: require.resolve('css-loader'),
+                options: {
+                  importLoaders: 1,
+                }
+              }
+            ]
+          },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
           // "style" loader turns CSS into JS modules that inject <style> tags.
@@ -158,6 +173,7 @@ module.exports = {
           // in development "style" loader enables hot editing of CSS.
           {
             test: /\.scss$/,
+            exclude: [/node_modules/],
             use: [
               require.resolve('style-loader'),
               {
