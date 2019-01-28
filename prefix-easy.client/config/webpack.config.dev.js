@@ -153,27 +153,26 @@ module.exports = {
           },
           // Here we punch our modules with a standard css-loader.
           // This enables the Materialize-css module
-          {
-            test: /\.css$/,
-            exclude: [/src/],
-            use: [
-              require.resolve('style-loader'),
-              {
-                loader: require.resolve('css-loader'),
-                options: {
-                  importLoaders: 1,
-                }
-              }
-            ]
-          },
+          // {
+          //   test: /\.scss$/,
+          //   exclude: [/src/],
+          //   use: [
+          //     require.resolve('style-loader'),
+          //     {
+          //       loader: require.resolve('css-loader'),
+          //       options: {
+          //         importLoaders: 1,
+          //       }
+          //     }
+          //   ]
+          // },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
           // "style" loader turns CSS into JS modules that inject <style> tags.
           // In production, we use a plugin to extract that CSS to a file, but
           // in development "style" loader enables hot editing of CSS.
           {
-            test: /\.scss$/,
-            exclude: [/node_modules/],
+            test: /\.(s?)css$/,
             use: [
               require.resolve('style-loader'),
               {
@@ -182,11 +181,6 @@ module.exports = {
                   importLoaders: 1,
                 },
               },
-
-              {
-                loader: require.resolve('sass-loader'),
-              },
-              
               {
                 loader: require.resolve('postcss-loader'),
                 options: {
@@ -206,6 +200,9 @@ module.exports = {
                     }),
                   ],
                 },
+              },
+              {
+                loader: require.resolve('sass-loader'),
               },
             ],
           },

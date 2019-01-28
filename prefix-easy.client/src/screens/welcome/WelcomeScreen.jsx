@@ -5,6 +5,15 @@ import avatar from '../../resources/img/log_avatar_256.jpg'
 
 export class WelcomeScreen extends React.Component {
     render() {
+
+        const headerStyle = {
+            fontWeight: 'default',
+            fontFamily: 'default',
+            textSize: 'default',
+            lineHeight: 'default',
+            letterSpacing: 'default',
+        };
+
         return (
             <div style={{
                 // 'overflow-x': 'hidden'
@@ -26,7 +35,11 @@ export class WelcomeScreen extends React.Component {
                         </div> 
                         <div class="text-wrap">
                             <div class="text">
-                                <h1>Hello, I'm Jay</h1>
+                                <h1
+                                    style={headerStyle}
+                                >
+                                    Hello, I'm Jay
+                                </h1>
                                 {/* <div class="h1-underline"/> */}
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
                             </div>
